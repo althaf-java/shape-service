@@ -1,0 +1,15 @@
+CREATE TABLE SQUARE
+        (
+        id INT AUTO_INCREMENT PRIMARY key,
+        name VARCHAR2(50) NOT NULL,
+        BOTTOM_LEFT_ID NUMBER(10) NOT NULL,
+        TOP_RIGHT_ID NUMBER(10) NOT NULL,
+        UNIQUE KEY name (name)
+        );
+
+CREATE TABLE POINT
+        (
+        id INT AUTO_INCREMENT PRIMARY key,
+        X_COORDINATE NUMBER(10) NOT NULL,
+        Y_COORDINATE NUMBER(10) NOT NULL
+        );
